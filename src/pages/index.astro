@@ -1,0 +1,41 @@
+---
+const config = {
+  "companyName": "XYZ Company",
+  "tagline": "Best consultants north of the border",
+  "brandColor": "#0F172A"
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{config.companyName} - {config.tagline}</title>
+    <style>
+      :root {
+        --brand-color: #0F172A;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: system-ui, sans-serif; line-height: 1.6; color: #333; }
+      .hero { background: linear-gradient(135deg, var(--brand-color), #667eea); color: white; padding: 100px 20px; text-align: center; }
+      .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+      .hero p { font-size: 1.5rem; margin-bottom: 2rem; }
+      .cta { background: white; color: var(--brand-color); padding: 15px 40px; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; text-decoration: none; display: inline-block; }
+      .section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>{config.companyName}</h1>
+      <p>{config.tagline}</p>
+      
+      <a href="/contact" class="cta">Get Started</a>
+    </div>
+
+    <div class="section">
+      <h2>About Us</h2>
+      <p></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+---
+const config = {
+  "companyName": "XYZ Company",
+  "brandColor": "#0F172A"
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Testimonials - {config.companyName}</title>
+    <style>
+      :root { --brand-color: #0F172A; }
+      body { font-family: system-ui, sans-serif; padding: 40px; max-width: 1000px; margin: 0 auto; color: #333; }
+      h1 { color: var(--brand-color); margin-bottom: 40px; text-align: center; }
+      .testimonials { display: grid; gap: 30px; }
+      .testimonial-card { background: #f8f9fa; padding: 30px; border-radius: 8px; }
+      .quote { font-size: 1.1rem; line-height: 1.6; margin-bottom: 15px; font-style: italic; }
+      .author { color: var(--brand-color); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <h1>What Our Clients Say</h1>
+    <div class="testimonials">
+        <div class="testimonial-card">
+          <p class="quote">"XYZ Company transformed how we engage with technology. With their tailored AI strategies, we've improved our operational efficiency and cut costs significantly. Their team is professional and approachable, always ready to address our concerns."</p>
+          <p class="author">— Emma Thompson, Business Owner</p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">"The expertise of XYZ Company in AI solutions is unmatched. Their recommendations were not only insightful but also actionable, leading to noticeable improvements in our productivity. They've become a vital partner in our growth journey."</p>
+          <p class="author">— Lucas Brown, Operations Manager</p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">"Working with XYZ Company was a game-changer for us. Their understanding of AI applications in business is profound, and they helped us unlock new potentials we hadn't imagined. Always professional and responsive, they are the partners you need for growth."</p>
+          <p class="author">— Sophie Nguyen, CEO</p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">"From initial consultation to implementation, XYZ Company exceeded our expectations. They took the time to understand our business model, offering AI solutions that directly addressed our unique challenges. Their impact has been profound and positive."</p>
+          <p class="author">— Blake Harris, Marketing Director</p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">"The team at XYZ Company brought a new perspective to our strategic planning. Their AI expertise was exactly what we needed to optimize our services and achieve better financial outcomes. Highly recommended for any business looking to innovate."</p>
+          <p class="author">— Natalie Young, CFO</p>
+        </div>
+    </div>
+  </body>
+</html>

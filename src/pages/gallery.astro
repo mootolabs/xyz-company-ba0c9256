@@ -1,0 +1,25 @@
+---
+const config = {
+  "companyName": "XYZ Company",
+  "brandColor": "#0F172A"
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Gallery - {config.companyName}</title>
+    <style>
+      :root { --brand-color: #0F172A; }
+      body { font-family: system-ui, sans-serif; padding: 40px; max-width: 1200px; margin: 0 auto; color: #333; }
+      h1 { color: var(--brand-color); margin-bottom: 20px; }
+      .intro { margin-bottom: 40px; }
+    </style>
+  </head>
+  <body>
+    <h1>Gallery</h1>
+    <p class="intro"></p>
+    <p>Gallery images will be displayed here.</p>
+  </body>
+</html>

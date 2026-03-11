@@ -1,0 +1,53 @@
+---
+const config = {
+  "companyName": "XYZ Company",
+  "brandColor": "#0F172A"
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Services - {config.companyName}</title>
+    <style>
+      :root { --brand-color: #0F172A; }
+      body { font-family: system-ui, sans-serif; padding: 40px; max-width: 1200px; margin: 0 auto; color: #333; }
+      h1 { color: var(--brand-color); margin-bottom: 20px; }
+      .intro { margin-bottom: 40px; }
+      .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+      .service-card { background: #f8f9fa; padding: 30px; border-radius: 8px; }
+      .service-card h3 { color: var(--brand-color); margin-bottom: 15px; }
+    </style>
+  </head>
+  <body>
+    <h1>Our Services</h1>
+    <p class="intro"></p>
+    <div class="services">
+        <div class="service-card">
+          <h3>AI Strategy Consulting</h3>
+          <p>undefined</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Process Automation</h3>
+          <p>undefined</p>
+        </div>
+
+        <div class="service-card">
+          <h3>AI-Powered Market Analysis</h3>
+          <p>undefined</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Customer Experience Optimization</h3>
+          <p>undefined</p>
+        </div>
+
+        <div class="service-card">
+          <h3>AI Training and Workshops</h3>
+          <p>undefined</p>
+        </div>
+    </div>
+  </body>
+</html>
